@@ -1,5 +1,8 @@
 package hello.advanced.app2.v2;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class OrderRepositoryV2 {
     public void save(String itemId) {
         if(itemId.equals("ex"))

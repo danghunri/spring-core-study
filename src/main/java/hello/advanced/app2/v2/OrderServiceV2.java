@@ -1,7 +1,9 @@
 package hello.advanced.app2.v2;
 
 import hello.advanced.app2.v1.OrderRepositoryV1;
+import org.springframework.stereotype.Service;
 
+@Service
 public class OrderServiceV2 {
     private final OrderRepositoryV2 orderRepository;
 
