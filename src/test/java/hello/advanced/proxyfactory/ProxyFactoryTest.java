@@ -30,7 +30,7 @@ public class ProxyFactoryTest {
     }
 
     @Test
-    @DisplayName("구체 클래스만 있으면 JDK 동적 프로시 사용")
+    @DisplayName("구체 클래스만 있으면 CGLIB 동적 프로시 사용")
     void concreteProxy() {
         ConcreteService target = new ConcreteService();
         ProxyFactory proxyFactory = new ProxyFactory(target);
