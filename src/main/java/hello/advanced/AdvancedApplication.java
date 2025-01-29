@@ -9,6 +9,7 @@ import hello.advanced.config.v2_dynamicproxy.DynamicProxyFilterConfig;
 import hello.advanced.config.v3_proxyfactory.ProxyFactoryConfigV1;
 import hello.advanced.config.v3_proxyfactory.ProxyFactoryConfigV2;
 import hello.advanced.config.v5_autoproxy.AutoProxyConfig;
+import hello.advanced.config.v6_aop.AopConfig;
 import hello.advanced.trace.logtrace.LogTrace;
 import hello.advanced.trace.logtrace.ThreadLocalLogTrace;
 import org.springframework.boot.SpringApplication;
@@ -24,7 +25,8 @@ import org.springframework.context.annotation.Import;
 //@Import(DynamicProxyFilterConfig.class)
 //@Import(ProxyFactoryConfigV1.class)
 //@Import(ProxyFactoryConfigV2.class)
-@Import(AutoProxyConfig.class)
+//@Import(AutoProxyConfig.class)
+@Import(AopConfig.class)
 @SpringBootApplication(scanBasePackages = "hello.advanced.app2")
 public class AdvancedApplication {
 
